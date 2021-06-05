@@ -1,0 +1,249 @@
+/*detail*/
+
+.detail {
+    margin-bottom: 100px;
+}
+
+.deatail-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*left*/
+
+.detail-profile__left {
+    width: 65%;
+    margin-top: 50px;
+}
+
+.profile-people {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6f9fc;
+    padding: 20px 25px;
+    border-radius: 6px;
+}
+
+.profile-people__information {
+    display: flex;
+    align-items: center;
+}
+
+.profile-people__information img.people-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.peaple-name h3.name-title {
+    color: #373f50;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.peaple-name p.people-mail {
+    color: #4e54c8;
+    font-size: 14px;
+}
+
+.profile-people__edit a.edit-link {
+    box-shadow: 0 0.5rem 1.125rem -0.5rem rgb(0 0 0 / 15%);
+    background-color: #fff;
+    color: #4b566b;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+h3.shipping-address {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #373f50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    margin: 0;
+    box-shadow: none !important;
+    margin-bottom: 0px;
+}
+
+.signup-form_group select {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.singin-checkbox {
+    margin-top: 30px;
+}
+
+.back-cart {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-cart a.back-cart_link {
+    text-align: center;
+    width: calc(50% - 10px);
+    display: inline-block;
+    padding: 10px 0px;
+    font-size: 15px;
+    padding: 10xp 20px;
+    border-radius: 6px;
+}
+
+.cart-color-1 {
+    color: #4b566b;
+    border-color: #d1d9e8;
+    background-color: #d1d9e8;
+    transition: all 0.25s linear;
+}
+
+.cart-color-1:hover {
+    background-color: #f5f7fa;
+    border-color: #f4f6fa;
+}
+
+.cart-color-2 {
+    background-color: #fe8080;
+    border-color: #fe7879;
+    color: #fff;
+    transition: all 0.25s linear;
+}
+
+.cart-color-2:hover {
+    border-color: #fe3638;
+    background-color: #fe3638;
+}
+
+
+/*right*/
+
+.detail-profilr__right {
+    transform: translateY(-13%);
+    cursor: pointer;
+}
+
+.product_left-best {
+    margin-right: 0;
+}
+
+.product_left-best h3.best-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.promotion-sell {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+}
+
+.bill-cart {
+    margin-top: 20px;
+    color: #4b566b;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.bill-cart__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.subtotal-price {
+    text-align: center;
+    color: #373f50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width: 767px) {
+    .deatail-profile {
+        flex-direction: column;
+    }
+    .detail-profile__left {
+        width: 100%;
+    }
+    .profile-people {
+        flex-direction: column;
+    }
+    .profile-people__information {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-people__information img.people-img {
+        object-fit: cover;
+        margin-right: 0px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .profile-people__edit {
+        margin-top: 30px;
+    }
+    .detail-profilr__right {
+        transform: translate(0);
+    }
+}
+
+
+/*Ipad*/
+
+@media screen and (max-width: 1023px) {
+    /*banner*/
+    .banner_cart-left {
+        width: 100%;
+    }
+    .deatail-profile {
+        flex-direction: column;
+    }
+    .detail-profile__left {
+        width: 100%;
+    }
+    .profile-people {
+        flex-direction: column;
+    }
+    .profile-people__information {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-people__information img.people-img {
+        object-fit: cover;
+        margin-right: 0px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .profile-people__edit {
+        margin-top: 30px;
+    }
+    .detail-profilr__right {
+        transform: translate(0);
+        width: 100%;
+        margin-top: 40px;
+    }
+}

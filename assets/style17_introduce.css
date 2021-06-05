@@ -1,0 +1,265 @@
+/* Reset css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* comman */
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #FFF !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+/* phần dùng chung cho dạng giao diện hàng và cột , khi cần thì gọi trong class*/
+
+.control::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.row {
+    margin-left: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-third {
+    width: calc(100%/3);
+}
+
+.col-half {
+    width: calc(100%/2);
+}
+
+
+/* end comman */
+
+
+/* start */
+
+#content .content-section {
+    width: 80%;
+    margin: auto;
+    padding: 64px 0px;
+}
+
+
+/* ------content----- */
+
+
+/* about */
+
+.about-info {
+    text-align: center;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 25px;
+    /* line-height: ; chỉnh độ cáo 1 dòng thường là từ 1.6-1.4 vs tiếng anh và 1.6 vs tiêng việt */
+    line-height: 1.4;
+}
+
+#content .section-heading {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    /* letter-spacing: ;  là để chỉnh khoảng cách giữa các chữ cái trong từ */
+    letter-spacing: 4px;
+}
+
+#content .menber-item>p {
+    margin-bottom: 15px;
+}
+
+#content .menber-list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+#content .menber-name {
+    font-size: 15px;
+}
+
+#content .menber-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+
+/* -----TOUR----- */
+
+.News-section {
+    background-color: #000;
+}
+
+
+/* ---News--- */
+
+.News-list {
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    cursor: pointer;
+}
+
+.News-img {
+    width: 100%;
+    display: block;
+}
+
+.News-img:hover {
+    opacity: 0.6;
+}
+
+.News-body {
+    font-size: 15px;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.News-heading {
+    font-size: 13px;
+    font-weight: 550;
+}
+
+.News-time {
+    margin-top: 15px;
+    opacity: 0.5;
+}
+
+.News-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.News-btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.News-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width: 767px) {
+    #content {
+        margin: 150px auto 50px;
+    }
+    #content .content-section {
+        max-width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    #content .about-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 16;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.5;
+    }
+    #content .menber-list {
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+    }
+    .News-list {
+        display: grid;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    #content .section-heading {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #content {
+        margin: 150px auto 50px;
+    }
+    #content .content-section {
+        max-width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    #content .about-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 16;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.5;
+    }
+    #content .menber-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 30px;
+    }
+    #content .menber-list img {
+        width: 150px;
+        height: 150px;
+    }
+    .News-section {
+        margin-top: 30px;
+    }
+    .News-list {
+        display: grid;
+        grid-row-gap: 30px;
+        grid-template-columns: 1fr;
+    }
+    #content .section-heading {
+        padding-top: 20px;
+    }
+}

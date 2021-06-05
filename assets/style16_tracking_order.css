@@ -1,0 +1,227 @@
+/*banner*/
+
+.banner_tracking {
+    background-color: #373f50;
+}
+
+.banner_tracking h3.contact-title {
+    color: #fff;
+}
+
+.banner_tracking ul.contact_list li a {
+    color: #fff;
+}
+
+
+/*tracking-order*/
+
+.tracking-order {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.tracking-order__purchase {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.tracking-items {
+    background-color: #f6f9fc;
+    text-align: center;
+    padding: 30px 0px;
+    border-radius: 6px;
+}
+
+.tracking-items p {
+    color: #4b566b;
+    font-size: 16px;
+}
+
+.tracking-items span {
+    color: #373f50;
+    font-size: 18px;
+}
+
+.purchasing-process {
+    box-shadow: 0 0.3rem 1.525rem -0.375rem rgb(0 0 0 / 10%) !important;
+    background-color: #fff;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.purchasing-process__steps {
+    display: flex;
+    align-items: center;
+}
+
+.purchasing-process__steps i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f6f9fc;
+    color: #4b566b;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.purchasing-process__steps i.fa-cog {
+    border-color: #fe696a;
+    background-color: #fe696a;
+    color: #fff;
+    box-shadow: 0 0.5rem 1.125rem -0.5rem rgb(254 105 106 / 90%);
+}
+
+.steps-items h4 {
+    color: #7d879c;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/*form*/
+
+form {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-group__checkbox input {
+    display: none;
+}
+
+.form-group__checkbox label {
+    cursor: pointer;
+    padding-left: 30px;
+    position: relative;
+}
+
+.form-group__checkbox label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.form-group__checkbox label i {
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0);
+}
+
+.form-group__checkbox input:checked+label i {
+    transform: scale(1);
+    background-color: #fe696a;
+}
+
+form a.link-tracking {
+    border-color: #fe3638;
+    background-color: #fe3638;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+/*modal*/
+
+.modal {
+    display: none;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.product-cart_left {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgb(0 0 0 / 3%), 0 0.275rem 1.25rem -0.0625rem rgb(0 0 0 / 5%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 400px;
+    padding: 20px;
+    border-radius: 6px;
+    overflow-y: scroll;
+}
+
+.close-Btn {
+    float: right;
+    color: #aaa;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close-Btn:hover:focus {
+    color: #000;
+    cursor: pointer;
+}
+
+.product-cart_left::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 1px;
+}
+
+.product-cart_left::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.product-cart_left::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+}
+
+
+/*Mobile and Ipad*/
+
+@media screen and (max-width: 1023px) {
+    /*banner*/
+    .banner__contact-home {
+        flex-direction: column;
+        text-align: center;
+    }
+    h3.contact-title {
+        margin-bottom: 20px;
+    }
+    /*tracking*/
+    .tracking-order__purchase {
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+    .purchasing-process {
+        grid-row-gap: 25px;
+        grid-template-columns: 1fr;
+    }
+    /*form*/
+    form {
+        flex-direction: column;
+    }
+    form a.link-tracking {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    /*Modal*/
+    .product-cart_left {
+        width: 90%;
+    }
+}

@@ -1,0 +1,51 @@
+.acount__desc {
+    font-size: 14px;
+    color: #7d879c;
+    font-weight: 300;
+}
+
+.signup-form_row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.signup-form_group {
+    width: calc(50% - 20px);
+    position: relative;
+}
+
+.signup-form_group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+input.signup-form_input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    background-color: #fafbff;
+    border-radius: 10px;
+    display: block;
+    outline: none;
+    transition: all 0.25s linear;
+}
+
+.signup-form_group i.fa-eye {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .signup-form_row {
+        flex-direction: column;
+    }
+    .signup-form_group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
