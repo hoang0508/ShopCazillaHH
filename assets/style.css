@@ -883,7 +883,7 @@ a.link_more {
 }
 
 a.link_more span {
-    z-index: 10;
+    z-index: 1;
     position: relative;
 }
 
