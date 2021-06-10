@@ -217,7 +217,7 @@ select {
     outline: none;
 }
 
-a.cart-number_link {
+button.cart-number_link {
     width: 74%;
     padding: 8px 10px;
     display: inline-block;
@@ -228,10 +228,11 @@ a.cart-number_link {
     border-color: #fe7879;
     border-radius: 6px;
     box-shadow: 0 0.5rem 1.125rem -0.5rem rgb(254 105 106 / 90%);
+    outline: none;
     transition: all 0.6s linear;
 }
 
-a.cart-number_link:hover {
+button.cart-number_link:hover {
     box-shadow: none;
     border-color: #fe3638;
     background-color: #fe3638;

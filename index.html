@@ -9,16 +9,17 @@
     <title>Home</title>
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,900;1,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="./assets/reponsive_index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/slick-1.8.1/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./assets/libs/animate.css">
+    <!-- <link rel="stylesheet" href="./assets/libs/animate.css"> -->
 </head>
 
-<body class="preloading">
+<body class="preloading" data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
     <div class="load">
         <img src="./assets/img/logo.png" alt="">
     </div>
@@ -26,7 +27,7 @@
 
     <!-- Header -->
 
-    <div class="header wow fadeInUp" data-wow-delay="1s">
+    <div class="header wow fadeInUp" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300">
         <div class="container">
             <div class="header-logo">
                 <img src="assets/img/logo.png" alt="" class="logo-image">
@@ -52,7 +53,7 @@
                     <div class="header-cart_product">
                         <div class="cart-icon">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            <span class="number-cart">3</span>
+                            <span class="number number-cart">0</span>
                         </div>
                         <div class="cart-name">
                             <small class="singin-txt">My cart</small>
@@ -131,7 +132,7 @@
                     <div class="header-cart_product">
                         <div class="cart-icon">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            <span class="number-cart">3</span>
+                            <span class="number number-cart">0</span>
                         </div>
                     </div>
                 </a>
@@ -187,7 +188,7 @@
 
     <!-- Menu -->
 
-    <div class="menu  wow   fadeInUp" data-wow-delay="1.5s" animate__infinite-infinite>
+    <div class="menu  wow  fadeInUp" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="400">
         <div class="container">
             <ul class="menu-list">
                 <li class="menu-list_item list-category">
@@ -276,7 +277,7 @@
 
     <!-- Banner -->
 
-    <div class="banner  wow  fadeInUp" data-wow-delay="1.5s">
+    <div class="banner  wow  fadeInUp" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="500">
         <div class="owl-carousel owl-theme autoplay">
             <div class="slide-item slide-item_one item">
                 <div class="slide-sale">
@@ -320,7 +321,7 @@
         <div class="container">
             <h3 class="product-title">Trending product</h3>
             <div class="trending-product_fashion">
-                <div class="product-item wow  fadeInUp" data-wow-delay="0.75s" animate__infinite="infinite">
+                <div class="product-item" data-aos="fade-up">
                     <a href="./index_product-2.html" class="product-item_link">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                         <img src="assets/img/anh14.jpg" alt="" class="product_image">
@@ -341,15 +342,15 @@
                                 <span>7</span><span>8.5</span><span>9</span><span>9.5</span>
                             </div>
                             <div class="product_cart-buy">
-                                <a href="" class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</a>
+                                <a href="#" class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</a>
                             </div>
                             <div class="product_cart-view">
-                                <a href="" class="eyes_view"><i class="fa fa-eye" aria-hidden="true"></i>Quick view</a>
+                                <a href="#" class="eyes_view"><i class="fa fa-eye" aria-hidden="true"></i>Quick view</a>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="product-item wow  fadeInUp" data-wow-delay="1s">
+                <div class="product-item" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300">
                     <a href="./index_product-4.html" class="product-item_link">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                         <img src="assets/img/anh15.jpg" alt="" class="product_image">
@@ -378,7 +379,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-item  wow  fadeInUp" data-wow-delay="1.5s">
+                <div class="product-item" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="600">
                     <a href="./index_product-3.html" class="product-item_link">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                         <img src="assets/img/anh16.jpg" alt="" class="product_image">
@@ -407,7 +408,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-item wow  fadeInUp" data-wow-delay="1.75s">
+                <div class="product-item" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="900">
                     <a href="./index_product-5.html" class="product-item_link">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                         <img src="assets/img/anh27.jpg" alt="" class="product_image">
@@ -436,7 +437,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-item wow  fadeInUp" data-wow-delay="1.2s">
+                <div class="product-item" data-aos="fade-up">
                     <a href="./index_product-2.html" class="product-item_link">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                         <img src="assets/img/anh17.jpg" alt="" class="product_image">
@@ -465,7 +466,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-item wow  fadeInUp" data-wow-delay="2s">
+                <div class="product-item" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300">
                     <a href="./index_product-3.html" class="product-item_link">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                         <img src="assets/img/anh18.jpg" alt="" class="product_image">
@@ -494,7 +495,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-item wow  fadeInUp" data-wow-delay="2.75s">
+                <div class="product-item" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="600">
                     <a href="./index_product-4.html" class="product-item_link">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                         <img src="assets/img/anh19.jpg" alt="" class="product_image">
@@ -523,7 +524,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-item wow  fadeInUp" data-wow-delay="3s">
+                <div class="product-item" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="900">
                     <a href="./index_product-5.html" class="product-item_link">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                         <img src="assets/img/anh20.jpg" alt="" class="product_image">
@@ -566,10 +567,10 @@
     </div>
 
     <!-- Women -->
-    <div class="product_women wow  fadeInUp" data-wow-delay="1s">
+    <div class="product_women">
         <div class="container">
             <div class="product_women-fashion">
-                <div class="product_image-women">
+                <div class="product_image-women" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200">
                     <div class="product_title">
                         <div class="product_title-women">
                             <p class="title-txt">For Women</p>
@@ -577,12 +578,11 @@
                         </div>
                     </div>
                     <img src="assets/img/anh21.jpg" alt="" class="fashion_image">
-                    <!-- <div class="trending-product_fashion"> -->
                 </div>
-                <div class="multiple-items">
+                <div class="multiple-items" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200">
                     <div class="slider">
                         <div class="product-slider_fashion">
-                            <div class="fashion_items wow  fadeInUp" data-wow-delay="0.75s">
+                            <div class="fashion_items" data-aos="fade-up" data-aos-easing="ease-in-sine">
                                 <a href="" class="fashion_link">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     <img src="assets/img/anh22.jpg" alt="" class="product_image">
@@ -611,7 +611,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="fashion_items wow  fadeInUp" data-wow-delay="1s">
+                            <div class="fashion_items" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300">
                                 <a href="" class="fashion_link">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     <img src="assets/img/anh23.jpg" alt="" class="product_image">
@@ -640,7 +640,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="fashion_items wow  fadeInUp" data-wow-delay="1.5s">
+                            <div class="fashion_items" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="600">
                                 <a href="" class="fashion_link">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     <img src="assets/img/anh87.jpg" alt="" class="product_image">
@@ -669,7 +669,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="fashion_items wow  fadeInUp" data-wow-delay="1.95s">
+                            <div class="fashion_items" data-aos="fade-up" data-aos-easing="ease-in-sine">
                                 <a href="" class="fashion_link">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     <img src="assets/img/anh25.jpg" alt="" class="product_image">
@@ -698,7 +698,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="fashion_items  wow  fadeInUp" data-wow-delay="2s">
+                            <div class="fashion_items" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300">
                                 <a href="" class="fashion_link">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     <img src="assets/img/anh26.jpg" alt="" class="product_image">
@@ -727,7 +727,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="fashion_items  wow  fadeInUp" data-wow-delay="1s">
+                            <div class="fashion_items" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="600">
                                 <a href="" class="fashion_link">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     <img src="assets/img/anh27.jpg" alt="" class="product_image">
@@ -758,7 +758,7 @@
                             </div>
                         </div>
                         <div class="product-slider_fashion">
-                            <div class="fashion_items wow  fadeInUp" data-wow-delay="1s">
+                            <div class="fashion_items" data-aos="fade-up" data-aos-easing="ease-in-sine">
                                 <a href="" class="fashion_link">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     <img src="assets/img/anh14.jpg" alt="" class="product_image">
@@ -787,7 +787,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="fashion_items wow  fadeInUp" data-wow-delay="1.25s">
+                            <div class="fashion_items" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300">
                                 <a href="" class="fashion_link">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     <img src="assets/img/anh15.jpg" alt="" class="product_image">
@@ -816,7 +816,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="fashion_items wow  fadeInUp" data-wow-delay="1.75s">
+                            <div class="fashion_items" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="600">
                                 <a href="" class="fashion_link">
                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
                                     <img src="assets/img/anh28.jpg" alt="" class="product_image">
@@ -1689,44 +1689,44 @@
     </div>
 
     <!-- Trademark -->
-    <div class="trademark wow fadeInUp" data-wow-delay="0.5s">
+    <div class="trademark wow fadeInUp">
         <div class="container">
             <h3 class="trademark_title">Shop by brand</h3>
             <div class="treademark-name">
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="1s">
+                <div class="trademark-name_image" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="500">
                     <img src="assets/img/anh32.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="1.2">
+                <div class="trademark-name_image" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-delay="800">
                     <img src="assets/img/anh33.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="1.3s">
+                <div class="trademark-name_image" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-delay="1000">
                     <img src="assets/img/anh34.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="1.4s">
+                <div class="trademark-name_image " data-aos="zoom-out-up" data-aos-easing="ease-in-sine" data-aos-delay="1300">
                     <img src="assets/img/anh35.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="1.5s">
+                <div class="trademark-name_image " data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-delay="500">
                     <img src="assets/img/anh36.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="1.6s">
+                <div class="trademark-name_image " data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-delay="800">
                     <img src="assets/img/anh37.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="1.7s">
+                <div class="trademark-name_image" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-delay="1000">
                     <img src="assets/img/anh38.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="1.8s">
+                <div class="trademark-name_image" data-aos="flip-down" data-aos-easing="ease-in-sine" data-aos-delay="1300">
                     <img src="assets/img/anh39.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="1.9s">
+                <div class="trademark-name_image" data-aos="fade-down-right" data-aos-easing="ease-in-sine" data-aos-delay="500">
                     <img src="assets/img/anh40.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="2s">
+                <div class="trademark-name_image" data-aos="fade-down-left" data-aos-easing="ease-in-sine" data-aos-delay="800">
                     <img src="assets/img/anh41.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="2.2s">
+                <div class="trademark-name_image " data-aos="flip-right" data-aos-easing="ease-in-sine" data-aos-delay="1000">
                     <img src="assets/img/anh42.png" alt="">
                 </div>
-                <div class="trademark-name_image wow  fadeInUp" data-wow-delay="2.3s">
+                <div class="trademark-name_image " data-aos="flip-left" data-aos-easing="ease-in-sine" data-aos-delay="1300">
                     <img src="assets/img/anh43.png" alt="">
                 </div>
             </div>
@@ -1734,10 +1734,10 @@
     </div>
 
     <!-- Promotion -->
-    <div class="promotion wow fadeInUp" data-wow-delay="0.7s">
+    <div class="promotion ">
         <div class="container">
             <div class="promotion-list">
-                <div class="promotion_left wow  fadeInUp" data-wow-delay="1s">
+                <div class="promotion_left" data-aos="zoom-out-up" data-aos-easing="ease-in-sine" data-aos-delay="600">
                     <div class="product_left-best">
                         <h3 class="best-title">Bestsellers</h3>
                         <div class="promotion-sell">
@@ -1805,7 +1805,7 @@
                         <a href="" class="sell_link">View more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="promotion_right wow  fadeInUp" data-wow-delay="1.2s">
+                <div class="promotion_right " data-aos="zoom-out-down" data-aos-easing="ease-in-sine" data-aos-delay="1000">
                     <img src="assets/img/anh44.jpg" alt="">
                 </div>
             </div>
@@ -1815,14 +1815,14 @@
     <!-- Blog -->
     <div class="the-blog">
         <!-- <div class="container"> -->
-        <div class="the-blog-left  wow fadeLeft" data-wow-delay="0.9s">
+        <div class="the-blog-left" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="500">
             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
             <div class="the-blog-left-text">
                 <h3>Read the blog</h3>
                 <p>Latest store, fashion news and trends</p>
             </div>
         </div>
-        <div class="the-blog-right  wow fadeInRight" data-wow-delay="0.9s">
+        <div class="the-blog-right" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="800">
             <i class="fa fa-instagram" aria-hidden="true"></i>
             <div class="the-blog-right-text">
                 <h3>Read the blog</h3>
@@ -1953,10 +1953,17 @@
     <script src="assets/owlcarousel/owl.carousel.min.js"></script>
     <script src="assets/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./assets/slider.js"></script>
-    <script src="./assets/dist/wow.min.js"></script>
+    <!-- <script src="./assets/dist/wow.min.js"></script>
 
     <script>
         new WOW().init();
+    </script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1200
+        });
     </script>
 </body>
 
