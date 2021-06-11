@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/logo2.png" type="image/x-icon">
-    <title>Home</title>
+    <title>Cartzila</title>
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -579,7 +579,7 @@
                     </div>
                     <img src="assets/img/anh21.jpg" alt="" class="fashion_image">
                 </div>
-                <div class="multiple-items" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200">
+                <div class="multiple-items" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="200">
                     <div class="slider">
                         <div class="product-slider_fashion">
                             <div class="fashion_items" data-aos="fade-up" data-aos-easing="ease-in-sine">
@@ -941,10 +941,10 @@
 
 
     <!-- Men -->
-    <div class="product_women slider-men wow fadeInUp" data-wow-delay="1.2s">
+    <div class="product_women slider-men">
         <div class="container">
             <div class="product_women-fashion product_men-fashion">
-                <div class="multiple-items">
+                <div class="multiple-items" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="500">
                     <div class="slider">
                         <div class="product-slider_fashion">
                             <div class="fashion_items wow  fadeInUp" data-wow-delay="1s">
@@ -1300,7 +1300,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product_image-women">
+                <div class="product_image-women" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="200">
                     <div class="product_title">
                         <div class="product_title-women">
                             <p class="title-txt">For Men</p>
@@ -1315,9 +1315,9 @@
     </div>
 
     <!-- Baby -->
-    <div class="product_women wow fadeInUp" data-wow-delay="1.5s">
+    <div class="product_women">
         <div class="container">
-            <div class="product_women-fashion">
+            <div class="product_women-fashion" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="300">
                 <div class="product_image-women">
                     <div class="product_title">
                         <div class="product_title-women">
@@ -1328,7 +1328,7 @@
                     <img src="assets/img/anh31.jpg" alt="" class="fashion_image">
                     <!-- <div class="trending-product_fashion"> -->
                 </div>
-                <div class="multiple-items">
+                <div class="multiple-items" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="600">
                     <div class="slider">
                         <div class="product-slider_fashion">
                             <div class="fashion_items">
@@ -1815,14 +1815,14 @@
     <!-- Blog -->
     <div class="the-blog">
         <!-- <div class="container"> -->
-        <div class="the-blog-left">
+        <div class="the-blog-left" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-delay="200">
             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
             <div class="the-blog-left-text">
                 <h3>Read the blog</h3>
                 <p>Latest store, fashion news and trends</p>
             </div>
         </div>
-        <div class="the-blog-right">
+        <div class="the-blog-right" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-delay="200">
             <i class="fa fa-instagram" aria-hidden="true"></i>
             <div class="the-blog-right-text">
                 <h3>Read the blog</h3>
@@ -1966,5 +1966,33 @@
         });
     </script>
 </body>
+
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "103972581741012");
+    chatbox.setAttribute("attribution", "biz_inbox");
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml: true,
+            version: 'v11.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 </html>

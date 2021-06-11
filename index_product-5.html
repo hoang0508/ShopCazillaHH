@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/logo2.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Product-5</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,900;1,100;1,300&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
                 <div class="header-cart_product">
                     <div class="cart-icon">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        <span class="number-cart">3</span>
+                        <span class="number number-cart">0</span>
                     </div>
                     <div class="cart-name">
                         <small class="singin-txt">My cart</small>
@@ -310,7 +310,7 @@
                         <div class="icon-heart"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
                     </div>
                     <div class="product-price">
-                        <p class="coins">$30.<small>99</small></p>
+                        <p class="coins">$18.<small>99</small></p>
                         <del>$25.00</del>
                         <span class="sale">sale</span>
                     </div>
@@ -360,7 +360,7 @@
                     </div>
                     <div class="cart-number">
                         <input type="number" value="1" name="" id="">
-                        <a href="#" class="cart-number_link"><i class="fa fa-cart-plus " aria-hidden="true"></i> Add to cart</a>
+                        <button class="btn cart-number_link"><i class="fa fa-cart-plus " aria-hidden="true"></i> Add to cart</button>
                     </div>
                     <div class="shipping-address">
                         <div class="shipping-address_prduct">
@@ -827,7 +827,18 @@
         </div>
     </div>
 
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
     <script src="assets/main_product.js"></script>
-</body>
+    <script src="./assets/jquery-3.6.0.js"></script>
+    <script>
+        /*cart*/
+        $(document).ready(function() {
+            $('.btn').click(function() {
+                let number1 = $(".number").text();
+                number1 = parseInt(number1);
+                $(".number").text(++number1);
+            });
+        })
+    </script>
 
 </html>
