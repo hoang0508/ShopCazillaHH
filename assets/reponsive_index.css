@@ -30,11 +30,13 @@
         display: none;
     }
     /*Mobile Bar */
-    .menu_sidebar i.fa-bars {
+    .menu_sidebar i.fa-bars,
+    i.fa-user-o {
         display: block;
         color: #333;
         margin: auto;
         font-size: 30px;
+        text-align: center;
     }
     .nav__ip:checked~.overlay {
         display: block;

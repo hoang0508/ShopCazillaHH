@@ -137,7 +137,7 @@ p.review-txt {
     border-color: #4e54c8;
 }
 
-.contact_icon i {
+.icon-blog i {
     background-color: rgba(255, 255, 255, 0.08);
     color: #4b566b;
     border: 1px solid #ccc;
@@ -284,4 +284,123 @@ p.review-txt {
 .write-content a.link-write:hover {
     background-color: #fe696a;
     border-color: #fe696a;
+}
+
+
+/*post*/
+
+.posts {
+    border-bottom: 0;
+    background-color: #f6f9fc;
+    margin-bottom: 50px;
+}
+
+.post-content {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.post__items img.post-images {
+    border-radius: 10px;
+}
+
+.slick-list {
+    min-height: 0px;
+}
+
+.post-list__slider {
+    position: relative;
+    padding-top: 100px;
+}
+
+ul.slick-dots {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:before {
+    content: '•';
+    font-size: 30px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    opacity: .25;
+    color: black;
+}
+
+.slick-dots li button:before:active {
+    background-color: #fe3638;
+}
+
+@media screen and (max-width: 767px) {
+    .single-blog {
+        margin-bottom: 50px;
+    }
+    .single-image {
+        flex-direction: column;
+    }
+    .single-image>* {
+        width: 100%;
+    }
+    .single-image__left {
+        margin-bottom: 20px;
+    }
+    .product-view {
+        flex-direction: column;
+    }
+    a.link_view {
+        margin-bottom: 20px;
+    }
+    .commnent-desc p.desc-txt {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .post-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .post__items {
+        width: 100%;
+        min-width: 333px;
+    }
+    .post-content__rp {
+        display: none;
+    }
 }
