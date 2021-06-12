@@ -129,8 +129,12 @@
         }
     }
     /*slide*/
+    .slider-banner {
+        min-height: 500px !important;
+        height: 0;
+    }
     .slide-item {
-        display: flex;
+        display: block;
         flex-direction: column;
         flex-direction: column-reverse;
         justify-content: center;
@@ -163,10 +167,17 @@
         color: #fff;
         position: relative;
         z-index: 20;
+        transform: translateY(26%);
     }
     .slide-sale {
-        min-height: 300px;
         margin: 40px 0px;
+        min-height: 250px;
+    }
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 65%;
     }
     /*trending*/
     .trending-product_fashion {
@@ -306,10 +317,6 @@
     .slide_img {
         min-height: 200px;
         margin-top: 60px;
-    }
-    .owl-theme .owl-dots .owl-dot span {
-        width: 8px;
-        height: 8px;
     }
     /*trending-prduct*/
     h3.product-title {
