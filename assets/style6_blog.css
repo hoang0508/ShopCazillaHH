@@ -122,7 +122,7 @@ h3.post_title:hover {
 
 /*next*/
 
-.next {
+.next-blog {
     margin-bottom: 60px;
 }
 
@@ -132,17 +132,17 @@ h3.post_title:hover {
     justify-content: space-between;
 }
 
-.prev {
+.prev-blog {
     color: #4b566b;
     font-size: 18px;
     transition: all 0.25s linear;
 }
 
-.prev i.fa-chevron-right {
+.prev-blog i.fa-chevron-right {
     color: #4b566b;
 }
 
-.prev:hover {
+.prev-blog:hover {
     color: #4b566b;
     background-color: #f3f5f9;
     border-color: #f3f5f9;
