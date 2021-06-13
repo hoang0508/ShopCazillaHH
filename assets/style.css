@@ -763,6 +763,7 @@ h3.product-title {
     margin: 0;
     position: relative;
     border-radius: 10px;
+    transition: all 0.5s linear;
 }
 
 .product-item:hover {
@@ -772,6 +773,7 @@ h3.product-title {
 .product-item:hover>.product_cart {
     opacity: 1;
     visibility: visible;
+    transition: all 0.5s linear;
 }
 
 a.product-item_link i.fa-heart-o {
@@ -849,6 +851,7 @@ a.product-item_link .product_price {
     line-height: 35px;
     border: 1px solid #ccc;
     border-radius: 6px;
+    color: #333;
 }
 
 .product_cart-size button {
