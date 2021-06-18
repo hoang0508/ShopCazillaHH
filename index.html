@@ -18,7 +18,7 @@
 
 <body class="preloading" data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
     <div class="load">
-        <img src="./assets/img/logo.png" alt="">
+        <h1 class="load-txt">Hello, Welcome to group 4 website</h1>
     </div>
 
 
@@ -281,7 +281,7 @@
                     <p class="sale_endow">Has just arrived!</p>
                     <h3 class="sale_discount">Huge Summer Collection</h3>
                     <span class="sale_product">Swimwear, Tops, Shorts, Sunglasses & much more...</span>
-                    <a href="" class="link_buy">Shop Now <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <a href="#" class="link_buy">Shop Now <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="slide_img">
                     <img src="assets/img/anh12.jpg" alt="" class="banner-image">
@@ -292,7 +292,7 @@
                     <p class="sale_endow">Complete your look with</p>
                     <h3 class="sale_discount">New Men's Accessories</h3>
                     <span class="sale_product">Hats & Caps, Sunglasses, Bags & much more...</span>
-                    <a href="" class="link_buy">Shop Now  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <a href="#" class="link_buy">Shop Now  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="slide_img">
                     <img src="assets/img/anh13.jpg" alt="" class="banner-image">
@@ -303,7 +303,7 @@
                     <p class="sale_endow">Hurry up! Limited time offer.</p>
                     <h3 class="sale_discount">Women Sportswear Sale</h3>
                     <span class="sale_product">Sneakers, Keds, Sweatshirts, Hoodies & much more...</span>
-                    <a href="" class="link_buy">Shop Now <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <a href="#" class="link_buy">Shop Now <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                 </div>
                 <div class="slide_img">
                     <img src="assets/img/anh86.jpg" alt="" class="banner-image">
@@ -346,10 +346,121 @@
                                 <a href="#" class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</a>
                             </div>
                             <div class="product_cart-view">
-                                <a href="#" class="eyes_view"><i class="fa fa-eye" aria-hidden="true"></i>Quick view</a>
+                                <button class="eyes_view Btn"><i class="fa fa-eye" aria-hidden="true"></i>Quick view</button>
                             </div>
                         </div>
                     </a>
+                    <div class="modal Modal">
+                        <div class="product-buy product-modal">
+                            <div class="container">
+                                <div class="modal-title">
+                                    <h3>Thông tin sản phẩm</h3>
+                                    <span class="close-Btn">&times;</span>
+                                </div>
+                                <div class="buy">
+                                    <div class="product-buy__left">
+                                        <div class="product-list">
+                                            <ul>
+                                                <li class="list__item"><img src="assets/img/anh20.jpg" onclick="changeImage('one')" id="one" class="item-image" alt=""></li>
+                                                <li class="list__item"><img src="assets/img/anh58.jpg" onclick="changeImage('two')" id="two" class="item-image" alt=""></li>
+                                                <li class="list__item"><img src="assets/img/anh23.jpg" onclick="changeImage('three')" id="three" class="item-image" alt=""></li>
+                                                <li class="list__item"><img src="assets/img/anh49.jpg" onclick="changeImage('four')" id="four" class="item-image" alt=""></li>
+                                            </ul>
+                                            <div id="main-image">
+                                                <img src="assets/img/anh20.jpg" id="img-main" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-buy__right">
+                                        <div class="review-vote">
+                                            <div class="icon_vote">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                                <span>74 review</span>
+                                            </div>
+                                            <div class="icon-heart"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                                        </div>
+                                        <div class="product-price">
+                                            <p class="coins">$18.<small>99</small></p>
+                                            <del>$25.00</del>
+                                            <span class="sale">sale</span>
+                                        </div>
+                                        <div class="product-color">
+                                            <p class="color-name">Color: Red/Dark blue/White</p>
+                                            <div class="dropdown__color">
+                                                <div class="dropdown-product">
+                                                    <ul class="dropdown-list dropdonw-list_color">
+                                                        <li class="dropdown-item item_color">
+                                                            <div class="radio">
+                                                                <input type="radio" name="" id="radio_input-7" class="radio_input">
+                                                                <label for="radio_input-7" class="radio_label radio_color"></label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item item_color">
+                                                            <div class="radio">
+                                                                <input type="radio" name="" id="radio_input-7" class="radio_input">
+                                                                <label for="radio_input-7" class="radio_label radio_color-3"></label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="dropdown-item item_color">
+                                                            <div class="radio">
+                                                                <input type="radio" name="" id="radio_input-7" class="radio_input">
+                                                                <label for="radio_input-7" class="radio_label radio_color-2"></label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="security">
+                                                    <span><i class="fa fa-shield" aria-hidden="true"></i> Product available</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="select-size">
+                                            <div class="size-title">
+                                                <label for="">Size</label>
+                                                <span><i class="fa fa-rub" aria-hidden="true"></i> Size guide</span>
+                                            </div>
+                                            <select name="size" class="form-select" id="">
+                                                <option value>Select size</option>
+                                                <option value="s">S</option>
+                                                <option value="m">M</option>
+                                                <option value="l">L</option>
+                                                <option value="xl">XL</option>
+                                                <option value="xs">XS</option>
+                                             </select>
+                                        </div>
+                                        <div class="cart-number">
+                                            <input type="number" value="1" name="" id="">
+                                            <button class="btn cart-number_link btn-modal"><i class="fa fa-cart-plus " aria-hidden="true"></i> Add to cart</button>
+                                        </div>
+                                        <div class="shipping-address">
+                                            <div class="shipping-address_prduct">
+                                                <div class="shiiping-name"><i class="fa fa-product-hunt cart_icon" aria-hidden="true"></i> Product info</div>
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="shipping-address_prduct">
+                                                <div class="shiiping-name"><i class="fa fa-truck cart_icon" aria-hidden="true"></i> Shipping options</div>
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="shipping-address_prduct">
+                                                <div class="shiiping-name"><i class="fa fa-map-marker cart_icon" aria-hidden="true"></i> Find in local store</div>
+                                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <div class="product_share share-modal">
+                                            <span>Share:</span>
+                                            <a href="#" class="share-link_twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                                            <a href="#" class="share-link_facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+                                            <a href="#" class="share-link_instagram"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="product-item" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300">
                     <a href="./index_product-4.html" class="product-item_link">
@@ -375,7 +486,7 @@
                                 <a href="" class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</a>
                             </div>
                             <div class="product_cart-view">
-                                <a href="" class="eyes_view"><i class="fa fa-eye" aria-hidden="true"></i>Quick view</a>
+                                <button class="eyes_view Btn"><i class="fa fa-eye" aria-hidden="true"></i>Quick view</button>
                             </div>
                         </div>
                     </a>
@@ -404,7 +515,7 @@
                                 <a href="" class="add_cart"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</a>
                             </div>
                             <div class="product_cart-view">
-                                <a href="" class="eyes_view"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</a>
+                                <button class="Btn eyes_view"><i class="fa fa-eye" aria-hidden="true"></i> Quick view</button>
                             </div>
                         </div>
                     </a>
@@ -1738,94 +1849,94 @@
     <div class="promotion ">
         <div class="container">
             <div class="promotion-list">
-                <div class="promotion_left" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="600">
-                    <div class="product_left-best">
-                        <h3 class="best-title">Bestsellers</h3>
-                        <div class="promotion-sell">
-                            <img src="assets/img/anh14.jpg" alt="" class="sell-image">
-                            <div class="sell-name">
-                                <p class="name_title">Women Colorblock Sneakers</p>
-                                <span class="sell_price">$154<small>.00</small></span>
+                <div class="promotion_left">
+                    <div class="product_left-best" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="300>
+                        <h3 class=" best-title ">Bestsellers</h3>
+                        <div class="promotion-sell ">
+                            <img src="assets/img/anh14.jpg " alt=" " class="sell-image ">
+                            <div class="sell-name ">
+                                <p class="name_title ">Women Colorblock Sneakers</p>
+                                <span class="sell_price ">$154<small>.00</small></span>
                             </div>
                         </div>
-                        <div class="promotion-sell">
-                            <img src="assets/img/anh20.jpg" alt="" class="sell-image">
-                            <div class="sell-name">
-                                <p class="name_title">TH Jeans City Backpack</p>
-                                <span class="sell_price">$79<small>.50</small></span>
+                        <div class="promotion-sell ">
+                            <img src="assets/img/anh20.jpg " alt=" " class="sell-image ">
+                            <div class="sell-name ">
+                                <p class="name_title ">TH Jeans City Backpack</p>
+                                <span class="sell_price ">$79<small>.50</small></span>
                             </div>
                         </div>
-                        <div class="promotion-sell">
-                            <img src="assets/img/anh17.jpg" alt="" class="sell-image">
-                            <div class="sell-name">
-                                <p class="name_title">3-Color Sun Stash Hat</p>
-                                <span class="sell_price">$22.<small>.00</small></span>
+                        <div class="promotion-sell ">
+                            <img src="assets/img/anh17.jpg " alt=" " class="sell-image ">
+                            <div class="sell-name ">
+                                <p class="name_title ">3-Color Sun Stash Hat</p>
+                                <span class="sell_price ">$22.<small>.00</small></span>
                             </div>
                         </div>
-                        <div class="promotion-sell">
-                            <img src="assets/img/anh19.jpg" alt="" class="sell-image">
-                            <div class="sell-name">
-                                <p class="name_title">Cotton Polo Regular Fit</p>
-                                <span class="sell_price">$9<small>.00</small></span>
+                        <div class="promotion-sell ">
+                            <img src="assets/img/anh19.jpg " alt=" " class="sell-image ">
+                            <div class="sell-name ">
+                                <p class="name_title ">Cotton Polo Regular Fit</p>
+                                <span class="sell_price ">$9<small>.00</small></span>
                             </div>
                         </div>
-                        <span class="more">...</span>
-                        <a href="" class="sell_link">View more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        <span class="more ">...</span>
+                        <a href=" " class="sell_link ">View more <i class="fa fa-chevron-right " aria-hidden="true "></i></a>
                     </div>
-                    <div class="product_left-best">
-                        <h3 class="best-title">New arrivals</h3>
-                        <div class="promotion-sell">
-                            <img src="assets/img/anh27.jpg" alt="" class="sell-image">
-                            <div class="sell-name">
-                                <p class="name_title">Cap with Appliqué</p>
-                                <span class="sell_price">$120<small>.00</small></span>
+                    <div class="product_left-best " data-aos="fade-down " data-aos-easing="ease-in-sine " data-aos-delay="600 ">
+                        <h3 class="best-title ">New arrivals</h3>
+                        <div class="promotion-sell ">
+                            <img src="assets/img/anh27.jpg " alt=" " class="sell-image ">
+                            <div class="sell-name ">
+                                <p class="name_title ">Cap with Appliqué</p>
+                                <span class="sell_price ">$120<small>.00</small></span>
                             </div>
                         </div>
-                        <div class="promotion-sell">
-                            <img src="assets/img/anh22.jpg" alt="" class="sell-image">
-                            <div class="sell-name">
-                                <p class="name_title">Girl's T-shirt with Motif</p>
-                                <span class="sell_price">$14<small>.50</small></span>
+                        <div class="promotion-sell ">
+                            <img src="assets/img/anh22.jpg " alt=" " class="sell-image ">
+                            <div class="sell-name ">
+                                <p class="name_title ">Girl's T-shirt with Motif</p>
+                                <span class="sell_price ">$14<small>.50</small></span>
                             </div>
                         </div>
-                        <div class="promotion-sell">
-                            <img src="assets/img/anh25.jpg" alt="" class="sell-image">
-                            <div class="sell-name">
-                                <p class="name_title">Leather Platform Sandals</p>
-                                <span class="sell_price">$100<small>.00</small></span>
+                        <div class="promotion-sell ">
+                            <img src="assets/img/anh25.jpg " alt=" " class="sell-image ">
+                            <div class="sell-name ">
+                                <p class="name_title ">Leather Platform Sandals</p>
+                                <span class="sell_price ">$100<small>.00</small></span>
                             </div>
                         </div>
-                        <div class="promotion-sell">
-                            <img src="assets/img/anh26.jpg" alt="" class="sell-image">
-                            <div class="sell-name">
-                                <p class="name_title">Regular Fit Cotton Shirt</p>
-                                <span class="sell_price">$17<small>.99</small></span>
+                        <div class="promotion-sell ">
+                            <img src="assets/img/anh26.jpg " alt=" " class="sell-image ">
+                            <div class="sell-name ">
+                                <p class="name_title ">Regular Fit Cotton Shirt</p>
+                                <span class="sell_price ">$17<small>.99</small></span>
                             </div>
                         </div>
-                        <span class="more"> ...</span>
-                        <a href="" class="sell_link">View more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        <span class="more "> ...</span>
+                        <a href=" " class="sell_link ">View more <i class="fa fa-chevron-right " aria-hidden="true "></i></a>
                     </div>
                 </div>
-                <div class="promotion_right " data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="1000">
-                    <img src="assets/img/anh44.jpg" alt="">
+                <div class="promotion_right " data-aos="fade-down " data-aos-easing="ease-in-sine " data-aos-delay="1000 ">
+                    <img src="assets/img/anh44.jpg " alt=" ">
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Blog -->
-    <div class="the-blog">
-        <!-- <div class="container"> -->
-        <div class="the-blog-left" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-delay="200">
-            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-            <div class="the-blog-left-text">
+    <div class="the-blog ">
+        <!-- <div class="container "> -->
+        <div class="the-blog-left " data-aos="zoom-in-up " data-aos-easing="ease-in-sine " data-aos-delay="200 ">
+            <i class="fa fa-pencil-square-o " aria-hidden="true "></i>
+            <div class="the-blog-left-text ">
                 <h3>Read the blog</h3>
                 <p>Latest store, fashion news and trends</p>
             </div>
         </div>
-        <div class="the-blog-right" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-delay="200">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <div class="the-blog-right-text">
+        <div class="the-blog-right " data-aos="zoom-in-down " data-aos-easing="ease-in-sine " data-aos-delay="200 ">
+            <i class="fa fa-instagram " aria-hidden="true "></i>
+            <div class="the-blog-right-text ">
                 <h3>Read the blog</h3>
                 <p>Latest store, fashion news and trends</p>
             </div>
@@ -1834,84 +1945,84 @@
     </div>
 
     <!-- footer -->
-    <div class="footer-contact wow fadeInUp" data-wow-delay="0.9s">
-        <div class="container">
-            <div class="footer-contact_inter advertisement_market">
-                <div class="contact_logo">
-                    <img src="assets/img/logo1.png" alt="">
-                    <span class="market_name">Marketplace</span>
+    <div class="footer-contact wow fadeInUp " data-wow-delay="0.9s ">
+        <div class="container ">
+            <div class="footer-contact_inter advertisement_market ">
+                <div class="contact_logo ">
+                    <img src="assets/img/logo1.png " alt=" ">
+                    <span class="market_name ">Marketplace</span>
                 </div>
-                <p class="contact_txt">
+                <p class="contact_txt ">
                     High quality items created by our global community.
                 </p>
-                <div class="contact-number">
-                    <div class="contact-number_product">
-                        <span class="number_red">
+                <div class="contact-number ">
+                    <div class="contact-number_product ">
+                        <span class="number_red ">
                             65,478 
                         </span>
-                        <span class="number_white">
+                        <span class="number_white ">
                             Products
                         </span>
                     </div>
-                    <div class="contact-number_product">
-                        <span class="number_red">
+                    <div class="contact-number_product ">
+                        <span class="number_red ">
                             65,478 
                         </span>
-                        <span class="number_white">
+                        <span class="number_white ">
                             Products
                         </span>
                     </div>
-                    <div class="contact-number_product">
-                        <span class="number_red">
+                    <div class="contact-number_product ">
+                        <span class="number_red ">
                             65,478 
                         </span>
-                        <span class="number_white">
+                        <span class="number_white ">
                             Products
                         </span>
                     </div>
                 </div>
-                <div class="contact_icon">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-dribbble" aria-hidden="true"></i>
-                    <i class="fa fa-behance" aria-hidden="true"></i>
-                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                <div class="contact_icon ">
+                    <i class="fa fa-facebook "></i>
+                    <i class="fa fa-twitter "></i>
+                    <i class="fa fa-dribbble " aria-hidden="true "></i>
+                    <i class="fa fa-behance " aria-hidden="true "></i>
+                    <i class="fa fa-pinterest-p " aria-hidden="true "></i>
                 </div>
-                <div class="contact-pay">
-                    <img src="assets/img/anh44.png" alt="" class="pay-image">
+                <div class="contact-pay ">
+                    <img src="assets/img/anh44.png " alt=" " class="pay-image ">
                 </div>
             </div>
-            <div class="footer-contact_inter">
-                <h3 class="contact_title">
+            <div class="footer-contact_inter ">
+                <h3 class="contact_title ">
                     Account & shipping info
                 </h3>
-                <ul class="contact-list">
-                    <li class="contact-list_item"><a href="./index.html">Home</a></li>
-                    <li class="contact-list_item"><a href="./index_introduce.html">Introduce</a></li>
-                    <li class="contact-list_item"><a href="./index_product.html">Product</a></li>
-                    <li class="contact-list_item"><a href="./index_cart.html">Purcharse</a></li>
-                    <li class="contact-list_item"><a href="./index_requirement.html">Requirement</a></li>
-                    <li class="contact-list_item"><a href="./index_blog.html">Blog</a></li>
-                    <li class="contact-list_item"><a href="./index_contact.html">Contact</a></li>
+                <ul class="contact-list ">
+                    <li class="contact-list_item "><a href="./index.html ">Home</a></li>
+                    <li class="contact-list_item "><a href="./index_introduce.html ">Introduce</a></li>
+                    <li class="contact-list_item "><a href="./index_product.html ">Product</a></li>
+                    <li class="contact-list_item "><a href="./index_cart.html ">Purcharse</a></li>
+                    <li class="contact-list_item "><a href="./index_requirement.html ">Requirement</a></li>
+                    <li class="contact-list_item "><a href="./index_blog.html ">Blog</a></li>
+                    <li class="contact-list_item "><a href="./index_contact.html ">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-contact_inter">
-                <h3 class="contact_title">
+            <div class="footer-contact_inter ">
+                <h3 class="contact_title ">
                     Download our app
                 </h3>
-                <div class="inter-app">
-                    <div class="inter-app__google">
-                        <i class="fa fa-apple" aria-hidden="true"></i>
-                        <div class="app__google-play">
+                <div class="inter-app ">
+                    <div class="inter-app__google ">
+                        <i class="fa fa-apple " aria-hidden="true "></i>
+                        <div class="app__google-play ">
                             <small>Dowload on the</small>
-                            <p class="play-txt">App Store</p>
+                            <p class="play-txt ">App Store</p>
                         </div>
                     </div>
-                    <div class="inter-app__google">
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                        <div class="app__google-play">
+                    <div class="inter-app__google ">
+                        <i class="fa fa-play " aria-hidden="true "></i>
+                        <div class="app__google-play ">
                             <small>Dowload on the</small>
-                            <p class="play-txt">Google Play</p>
+                            <p class="play-txt ">Google Play</p>
                         </div>
                     </div>
                 </div>
@@ -1919,29 +2030,29 @@
         </div>
     </div>
 
-    <div class="footer-email wow fadeInUp" data-wow-delay="0.9s">
-        <div class="container">
-            <h3 class="newsletter_title">
+    <div class="footer-email wow fadeInUp " data-wow-delay="0.9s ">
+        <div class="container ">
+            <h3 class="newsletter_title ">
                 Subscribe to newsletter
             </h3>
-            <div class="email-box">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <input type="email" name="" value="" class="tbox" placeholder="Enter your email">
-                <button class="sub-btn">Subscribe</button>
+            <div class="email-box ">
+                <i class="fa fa-envelope " aria-hidden="true "></i>
+                <input type="email " name=" " value=" " class="tbox " placeholder="Enter your email ">
+                <button class="sub-btn ">Subscribe</button>
             </div>
-            <p class="email_txt">
+            <p class="email_txt ">
                 *Receive early discount offers, updates and new products info.
             </p>
-            <div class="license">
-                <div class="license-author">
+            <div class="license ">
+                <div class="license-author ">
                     © All rights reserved. Made by Nguyễn Huy Hoàng
                 </div>
-                <div class="license-support">
-                    <ul class="support-list">
-                        <li class="support-list_item"><a href="">Help Center</a></li>
-                        <li class="support-list_item"><a href="">Affiliates</a></li>
-                        <li class="support-list_item"><a href="">Support</a></li>
-                        <li class="support-list_item"><a href="">Terms & Conditions</a></li>
+                <div class="license-support ">
+                    <ul class="support-list ">
+                        <li class="support-list_item "><a href=" ">Help Center</a></li>
+                        <li class="support-list_item "><a href=" ">Affiliates</a></li>
+                        <li class="support-list_item "><a href=" ">Support</a></li>
+                        <li class="support-list_item "><a href=" ">Terms & Conditions</a></li>
                     </ul>
                 </div>
             </div>
@@ -1950,12 +2061,13 @@
 
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="assets/slick-1.8.1/slick-1.8.1/slick/slick.min.js "></script>
+    <script src="./assets/slider.js "></script>
+    <script src="./assets/modal-product.js "></script>
+   <!-- <script src="./assets/main_product.js "></script> -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="assets/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="./assets/slider.js"></script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
     <script>
         AOS.init({
             offset: 200,
@@ -1965,16 +2077,16 @@
 </body>
 
 <!-- Messenger Plugin chat Code -->
-<div id="fb-root"></div>
+<div id="fb-root "></div>
 
 <!-- Your Plugin chat code -->
-<div id="fb-customer-chat" class="fb-customerchat">
+<div id="fb-customer-chat " class="fb-customerchat ">
 </div>
 
 <script>
     var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "103972581741012");
-    chatbox.setAttribute("attribution", "biz_inbox");
+    chatbox.setAttribute("page_id ", "103972581741012 ");
+    chatbox.setAttribute("attribution ", "biz_inbox ");
     window.fbAsyncInit = function() {
         FB.init({
             xfbml: true,
@@ -1992,40 +2104,5 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<script>
-    var slideIndex = 1;
-    showSlides();
-
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        // dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 2000);
-    }
-</script>
 
 </html>

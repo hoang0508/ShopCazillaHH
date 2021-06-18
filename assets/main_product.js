@@ -3,7 +3,7 @@ function changeImage(id) {
     document.getElementById('img-main').setAttribute('src', imagePath);
 }
 
-var countDate = new Date('June 25, 2021 00:00:00').getTime();
+var countDate = new Date('June 30, 2021 00:00:00').getTime();
 
 function newYear() {
     var now = new Date().getTime();
@@ -14,12 +14,12 @@ function newYear() {
     var hour = minute * 60;
     var day = hour * 24;
 
-    var d = Math.floor(gap / (day));
+    var dy = Math.floor(gap / (day));
     var h = Math.floor(gap % (day) / (hour));
     var m = Math.floor(gap % (hour) / (minute));
     var s = Math.floor((gap % (minute)) / (second));
 
-    document.getElementById('day').innerText = d;
+    document.getElementById('day').innerText = dy;
     document.getElementById('hour').innerText = h;
     document.getElementById('minute').innerText = m;
     document.getElementById('second').innerText = s;
