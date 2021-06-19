@@ -295,26 +295,36 @@ p.review-txt {
     margin-bottom: 50px;
 }
 
-.post-content {
+
+/* .post-content {
     display: grid;
     grid-template-columns: (3, 1fr);
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 25px;
     cursor: pointer;
     margin-bottom: 30px;
+} */
+
+.post-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 80px;
+    justify-content: space-between;
+}
+
+.post__items {
+    display: block;
 }
 
 .post__items img.post-images {
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .slick-list {
     min-height: 0px;
-}
-
-.post-list__slider {
-    position: relative;
-    padding-top: 100px;
 }
 
 ul.slick-dots {
