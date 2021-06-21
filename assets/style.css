@@ -37,7 +37,7 @@ button {
 }
 
 
-/*load*/
+/*-----------------------load---------------------*/
 
 .load {
     width: 100%;
@@ -83,7 +83,7 @@ button {
 }
 
 
-/*header*/
+/*--------------header-------------------------*/
 
 .header {
     position: fixed;
@@ -98,6 +98,8 @@ button {
 .header .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 .header-logo {
@@ -156,6 +158,10 @@ button {
     font-size: 22px;
     color: #4b566b;
     margin-right: 23px;
+}
+
+.header-singup i.fa-heart-o:hover {
+    color: #fe696a;
 }
 
 .account-sigin {
@@ -403,7 +409,7 @@ label.menu_sidebar {
 }
 
 
-/*Menu*/
+/*----------------Menu----------------------*/
 
 .menu {
     margin-top: 100px;
@@ -421,6 +427,10 @@ ul.menu-list a {
     font-weight: 500;
     font-size: 18px;
     transition: all 0.25s linear;
+}
+
+ul.menu-list li a.active {
+    color: #fe696a;
 }
 
 ul.menu-list li.menu-list_item a {
@@ -579,7 +589,7 @@ ul.menu-checkout::before {
 }
 
 
-/*slide*/
+/*----------slide-------------*/
 
 .slider-banner {
     max-width: 100%;
@@ -638,22 +648,6 @@ ul.menu-checkout::before {
 
 img {
     vertical-align: middle;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
 }
 
 .fade {
@@ -768,12 +762,53 @@ p.sale_endow {
     margin-bottom: 50px;
 }
 
+.title-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h3.product-title {
     text-align: center;
     font-size: 35px;
     font-weight: 600;
     color: #373f50;
     margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    transition: all 0.5s ease;
+}
+
+h3.product-title:hover {
+    color: #fe696a;
+    cursor: pointer;
+}
+
+h3.product-title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #fe696a;
+    top: 50%;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+h3.product-title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #fe696a;
+    top: 50%;
+    right: 0;
+    transform: translateX(100%);
 }
 
 .trending-product_fashion {
@@ -865,7 +900,7 @@ a.product-item_link .product_price {
     border-radius: 0 0 10px 10px;
     visibility: hidden;
     opacity: 0;
-    z-index: 1;
+    z-index: 5;
     box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgb(0 0 0 / 3%), 0 0.275rem 1.25rem -0.0625rem rgb(0 0 0 / 5%);
 }
 
@@ -890,11 +925,6 @@ a.product-item_link .product_price {
     line-height: 35px;
     border: 1px solid #ccc;
     border-radius: 6px;
-}
-
-.product_cart-size button:focus {
-    border-color: #fe696a;
-    color: #fe696a;
 }
 
 .product_cart .product_cart-buy {
@@ -982,6 +1012,7 @@ a.link_more {
     transition: background-color 0.5s linear;
     overflow: hidden;
     z-index: 1;
+    transition: all 0.5s ease-in-out;
 }
 
 a.link_more span {
@@ -991,37 +1022,32 @@ a.link_more span {
 
 a.link_more i.fa-chevron-right {
     color: #4b566b;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 5px;
+    transition: all 0.5s ease-in-out;
 }
 
+a.link_more i.fa-chevron-right:hover {
+    color: #fff;
+}
 
-/* a.link_more:hover {
+a.link_more:hover {
     background-color: #4e54c8;
     border-color: #4e54c8;
     color: #fff;
-} */
-
-a.link_more::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #4e54c8;
-    border-color: #4e54c8;
-    color: #fff;
-    transform: translateX(-100%);
-    transition: transform 0.5s linear;
-    z-index: 1;
-    opacity: 0.6;
 }
 
-a.link_more:hover::after {
-    color: #fff;
-    transition: transform 0.5s linear;
-    transform: translateX(0%);
+.image-scale {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-scale img.product_image {
+    transition: all 0.5s linear;
+}
+
+.image-scale img.product_image:hover {
+    transform: scale(1) rotate(360deg);
 }
 
 
@@ -1029,6 +1055,7 @@ a.link_more:hover::after {
 
 .product_women {
     margin-top: 30px;
+    height: 850px;
 }
 
 .product_women-fashion {
