@@ -1047,7 +1047,7 @@ a.link_more:hover {
 }
 
 .image-scale img.product_image:hover {
-    transform: scale(1) rotate(360deg);
+    transform: scale(1.1);
 }
 
 
