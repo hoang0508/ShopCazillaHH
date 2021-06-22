@@ -61,6 +61,10 @@
 }
 
 h3.shipping-address {
+    border: 0;
+}
+
+h3.shipping-title {
     margin-top: 30px;
     font-size: 18px;
     color: #373f50;

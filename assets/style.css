@@ -195,11 +195,6 @@ p.acount-txt {
     color: #eee;
 }
 
-.header-cart:hover>.checkout-cart_list {
-    visibility: visible;
-    opacity: 1;
-}
-
 .header-cart_product {
     display: flex;
     align-items: center;
@@ -252,6 +247,12 @@ p.acount-txt {
     visibility: hidden;
     opacity: 0;
     z-index: 6;
+}
+
+.header-cart:hover>.checkout-cart_list {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s linear;
 }
 
 .checkout-cart_list::before {
@@ -536,11 +537,12 @@ ul.menu-list li.menu-list_item a:hover {
     visibility: visible;
     opacity: 1;
     cursor: pointer;
+    transition: all 0.5s linear;
 }
 
 li.list-cart {
     position: relative;
-    transition: all 0.25s linear;
+    transition: all 0.5s linear;
 }
 
 ul.menu-checkout {
@@ -576,6 +578,7 @@ li.list-cart:hover>ul.menu-checkout {
     visibility: visible;
     opacity: 1;
     cursor: pointer;
+    transition: all 0.5s linear;
 }
 
 ul.menu-checkout::before {
@@ -832,12 +835,6 @@ h3.product-title::after {
     box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgb(0 0 0 / 3%), 0 0.275rem 1.25rem -0.0625rem rgb(0 0 0 / 5%);
 }
 
-.product-item:hover>.product_cart {
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.5s linear;
-}
-
 a.product-item_link i.fa-heart-o {
     float: right;
     background-color: #f3f5f9;
@@ -885,6 +882,12 @@ a.product-item_link .product_price {
 
 .product_price .icon_vote i {
     color: orange;
+}
+
+.product-item:hover>.product_cart {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s linear;
 }
 
 .product_cart {
