@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.slider').slick({
+    $(".slider").slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -18,11 +18,11 @@ showSlides();
 showSlides(slideIndex);
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
@@ -30,10 +30,10 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
-        slideIndex = 1
+        slideIndex = 1;
     }
     if (n < 1) {
-        slideIndex = slides.length
+        slideIndex = slides.length;
     }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -46,12 +46,9 @@ function showSlides(n) {
     setTimeout(showSlides, 2000);
 }
 
-
-
-
 /*loading*/
 
-$(window).on('load', function(event) {
-    $('body').removeClass('preloading');
-    $('.load').delay(9500).fadeOut('slow');
-});
+// $(window).on('load', function(event) {
+//     $('body').removeClass('preloading');
+//     $('.load').delay(9500).fadeOut('slow');
+// });
